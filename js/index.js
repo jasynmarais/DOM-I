@@ -50,3 +50,9 @@ navs[2].textContent = siteContent["nav"]["nav-item-3"];
 navs[3].textContent = siteContent["nav"]["nav-item-4"];
 navs[4].textContent = siteContent["nav"]["nav-item-5"];
 navs[5].textContent = siteContent["nav"]["nav-item-6"];
+
+//Nav color
+navs.forEach(i => {
+  i.style.color = "green";
+});
+
