@@ -85,3 +85,13 @@ h4s[3].textContent = siteContent["main-content"]["product-h4"];
 h4s[4].textContent = siteContent["main-content"]["vision-h4"];
 h4s[5].textContent = siteContent["contact"]["contact-h4"];
 
+//P
+let ps = document.querySelectorAll("p");
+ps[0].textContent = siteContent["main-content"]["features-content"];
+ps[1].textContent = siteContent["main-content"]["about-content"];
+ps[2].textContent = siteContent["main-content"]["services-content"];
+ps[3].textContent = siteContent["main-content"]["product-content"];
+ps[4].textContent = siteContent["main-content"]["vision-content"];
+ps[5].textContent = siteContent["contact"]["address"];
+ps[6].textContent = siteContent["contact"]["phone"];
+ps[7].textContent = siteContent["contact"]["email"];
