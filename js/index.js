@@ -56,7 +56,7 @@ navs.forEach(i => {
   i.style.color = "green";
 });
 
-//Add nav item
+//Add nav items
 
 var appendNode = document.createElement("a");
 var textAppend = document.createTextNode("Company");
@@ -68,3 +68,10 @@ prependNode.appendChild(textPrepend);
 document.querySelector("nav").appendChild(appendNode);
 document.querySelector("nav").prepend(prependNode);
 
+//CTA
+let cta_h1 = document.querySelector("h1");
+cta_h1.textContent = siteContent["cta"]["h1"];
+let cta_button = document.querySelector("button");
+cta_button.textContent = siteContent["cta"]["button"];
+let cta_img = document.getElementById("cta-img");
+cta_img.src = siteContent["cta"]["img-src"];
