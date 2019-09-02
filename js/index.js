@@ -95,3 +95,8 @@ ps[4].textContent = siteContent["main-content"]["vision-content"];
 ps[5].textContent = siteContent["contact"]["address"];
 ps[6].textContent = siteContent["contact"]["phone"];
 ps[7].textContent = siteContent["contact"]["email"];
+
+//Mid image
+let mid_img = document.getElementById("middle-img");
+mid_img.setAttribute("src", siteContent["main-content"]["middle-img-src"]);
+
