@@ -103,3 +103,7 @@ mid_img.setAttribute("src", siteContent["main-content"]["middle-img-src"]);
 //footer
 let foot = document.querySelector("footer");
 foot.textContent = siteContent["footer"]["copyright"];
+
+let heading4 = document.querySelectorAll('h4');
+heading4.forEach(h => h.style.color = 'orange');
+foot.style.color = 'red';
