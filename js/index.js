@@ -40,7 +40,7 @@ const siteContent = {
 // Example: Update the img src for the logo
 
 
-//Nav
+//nav
 let logo = document.getElementById("logo-img");
 logo.setAttribute("src", siteContent["nav"]["img-src"]);
 let navs = document.querySelectorAll("a");
@@ -51,12 +51,12 @@ navs[3].textContent = siteContent["nav"]["nav-item-4"];
 navs[4].textContent = siteContent["nav"]["nav-item-5"];
 navs[5].textContent = siteContent["nav"]["nav-item-6"];
 
-//Nav color
+//nav color
 navs.forEach(i => {
   i.style.color = "green";
 });
 
-//Add nav items
+//add nav items
 
 var appendNode = document.createElement("a");
 var textAppend = document.createTextNode("Company");
@@ -96,7 +96,10 @@ ps[5].textContent = siteContent["contact"]["address"];
 ps[6].textContent = siteContent["contact"]["phone"];
 ps[7].textContent = siteContent["contact"]["email"];
 
-//Mid image
+//mid image
 let mid_img = document.getElementById("middle-img");
 mid_img.setAttribute("src", siteContent["main-content"]["middle-img-src"]);
 
+//footer
+let foot = document.querySelector("footer");
+foot.textContent = siteContent["footer"]["copyright"];
