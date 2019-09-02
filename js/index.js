@@ -56,3 +56,15 @@ navs.forEach(i => {
   i.style.color = "green";
 });
 
+//Add nav item
+
+var appendNode = document.createElement("a");
+var textAppend = document.createTextNode("Company");
+var prependNode = document.createElement("a");
+var textPrepend = document.createTextNode("Staff");
+appendNode.appendChild(textAppend);
+prependNode.appendChild(textPrepend);
+
+document.querySelector("nav").appendChild(appendNode);
+document.querySelector("nav").prepend(prependNode);
+
