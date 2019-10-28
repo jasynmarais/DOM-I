@@ -99,6 +99,13 @@ const ctaHeader = document.querySelector('.cta-text h1');
 const ctaButton = document.querySelector('.cta-text button');
 
 // Add CTA elements to DOM
-ctaHeader.textContent = siteContent.cta.h1
-ctaButton.textContent = siteContent.cta.button
+ctaHeader.textContent = siteContent.cta.h1;
+ctaButton.textContent = siteContent.cta.button;
+
+// Add topContent 
+
+topContentHeaders[0].textContent = siteContent['main-content']['features-h4'];
+topContentHeaders[1].textContent = siteContent['main-content']['about-h4'];
+topContentParagraphs[0].textContent = siteContent['main-content']['features-content'];
+topContentParagraphs[1].textContent = siteContent['main-content']['about-content'];
 
