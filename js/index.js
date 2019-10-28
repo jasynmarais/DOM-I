@@ -129,3 +129,8 @@ contactHeader.textContent = siteContent.contact['contact-h4'];
 contactParagraph[0].textContent = siteContent.contact.address;
 contactParagraph[1].textContent = siteContent.contact.phone;
 contactParagraph[2].textContent = siteContent.contact.email;
+
+// Select footer element
+
+const footerParagraph = document.querySelector('footer p');
+footerParagraph.textContent = siteContent.footer.copyright;
