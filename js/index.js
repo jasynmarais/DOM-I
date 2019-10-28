@@ -134,3 +134,19 @@ contactParagraph[2].textContent = siteContent.contact.email;
 
 const footerParagraph = document.querySelector('footer p');
 footerParagraph.textContent = siteContent.footer.copyright;
+
+// Change color of nav items
+navItems.forEach(item => item.style.color = 'green');
+
+// Add new items to nav
+const nav = document.querySelector('nav');
+
+const lastNavEl = document.createElement('a');
+lastNavEl.textContent = 'Marais';
+lastNavEl.style.color = 'green';
+nav.appendChild(lastNavEl);
+
+const firstNavEl = document.createElement('a');
+firstNavEl.textContent = 'Jasyn';
+firstNavEl.style.color = 'green';
+nav.prepend(firstNavEl);
