@@ -94,3 +94,11 @@ navItems[3].textContent = siteContent.nav['nav-item-4'];
 navItems[4].textContent = siteContent.nav['nav-item-5'];
 navItems[5].textContent = siteContent.nav['nav-item-6'];
 
+// Select CTA elements
+const ctaHeader = document.querySelector('.cta-text h1');
+const ctaButton = document.querySelector('.cta-text button');
+
+// Add CTA elements to DOM
+ctaHeader.textContent = siteContent.cta.h1
+ctaButton.textContent = siteContent.cta.button
+
