@@ -38,5 +38,115 @@ const siteContent = {
 };
 
 // Example: Update the img src for the logo
-let logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent["nav"]["img-src"])
+const logo = document.getElementById('logo-img');
+logo.setAttribute('src', siteContent.nav['img-src']);
+
+const ctaImg = document.getElementById('cta-img');
+ctaImg.src = siteContent.cta['img-src'];
+
+const middleImg = document.getElementById('middle-img');
+middleImg.src = siteContent['main-content']['middle-img-src'];
+
+// Add IDs to elements
+
+const navItems = document.querySelectorAll('nav a');
+navItems.forEach((item, i) => {
+  i += 1;
+  item.classList.add(`nav-item-${i}`);
+})
+
+const topContentHeaders = document.querySelectorAll('.top-content h4');
+topContentHeaders.forEach((item, i) => {
+  i += 1;
+  item.id = 'topHeading' + i;
+})
+
+const topContentParagraphs = document.querySelectorAll('.top-content p')
+topContentParagraphs.forEach((item, i) => {
+  i += 1;
+  item.id = 'topParagragh' + i;
+})
+
+const bottomContentHeaders = document.querySelectorAll('.bottom-content h4');
+bottomContentHeaders.forEach((item, i) => {
+  i += 1;
+  item.id = 'bottomHeading' + i;
+})
+
+const bottomContentParagraphs = document.querySelectorAll('.bottom-content p');
+bottomContentParagraphs.forEach((item, i) => {
+  i += 1;
+  item.id = 'bottomParagraph' + i;
+})
+
+const contactParagraph = document.querySelectorAll('.contact p');
+contactParagraph.forEach((item, i) => {
+  i += 1;
+  item.id = 'contactParagraph' + i;
+})
+
+// Add Nav items to page
+
+navItems[0].textContent = siteContent.nav['nav-item-1'];
+navItems[1].textContent = siteContent.nav['nav-item-2'];
+navItems[2].textContent = siteContent.nav['nav-item-3'];
+navItems[3].textContent = siteContent.nav['nav-item-4'];
+navItems[4].textContent = siteContent.nav['nav-item-5'];
+navItems[5].textContent = siteContent.nav['nav-item-6'];
+
+// Select CTA elements
+const ctaHeader = document.querySelector('.cta-text h1');
+const ctaButton = document.querySelector('.cta-text button');
+
+// Add CTA elements to DOM
+ctaHeader.textContent = siteContent.cta.h1;
+ctaButton.textContent = siteContent.cta.button;
+
+// Add topContent 
+
+topContentHeaders[0].textContent = siteContent['main-content']['features-h4'];
+topContentHeaders[1].textContent = siteContent['main-content']['about-h4'];
+topContentParagraphs[0].textContent = siteContent['main-content']['features-content'];
+topContentParagraphs[1].textContent = siteContent['main-content']['about-content'];
+
+// Add bottomContent
+
+bottomContentHeaders[0].textContent = siteContent['main-content']['services-h4'];
+bottomContentHeaders[1].textContent = siteContent['main-content']['product-h4'];
+bottomContentHeaders[2].textContent = siteContent['main-content']['vision-h4'];
+bottomContentParagraphs[0].textContent = siteContent['main-content']['services-content'];
+bottomContentParagraphs[1].textContent = siteContent['main-content']['product-content'];
+bottomContentParagraphs[2].textContent = siteContent['main-content']['services-content'];
+
+// Select contact header
+
+const contactHeader = document.querySelector('.contact h4');
+
+
+// Add contact content
+
+contactHeader.textContent = siteContent.contact['contact-h4'];
+contactParagraph[0].textContent = siteContent.contact.address;
+contactParagraph[1].textContent = siteContent.contact.phone;
+contactParagraph[2].textContent = siteContent.contact.email;
+
+// Select footer element
+
+const footerParagraph = document.querySelector('footer p');
+footerParagraph.textContent = siteContent.footer.copyright;
+
+// Change color of nav items
+navItems.forEach(item => item.style.color = 'green');
+
+// Add new items to nav
+const nav = document.querySelector('nav');
+
+const lastNavEl = document.createElement('a');
+lastNavEl.textContent = 'School';
+lastNavEl.style.color = 'green';
+nav.appendChild(lastNavEl);
+
+const firstNavEl = document.createElement('a');
+firstNavEl.textContent = 'Lambda';
+firstNavEl.style.color = 'green';
+nav.prepend(firstNavEl);
