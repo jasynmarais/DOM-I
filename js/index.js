@@ -142,11 +142,11 @@ navItems.forEach(item => item.style.color = 'green');
 const nav = document.querySelector('nav');
 
 const lastNavEl = document.createElement('a');
-lastNavEl.textContent = 'Marais';
+lastNavEl.textContent = 'School';
 lastNavEl.style.color = 'green';
 nav.appendChild(lastNavEl);
 
 const firstNavEl = document.createElement('a');
-firstNavEl.textContent = 'Jasyn';
+firstNavEl.textContent = 'Lambda';
 firstNavEl.style.color = 'green';
 nav.prepend(firstNavEl);
